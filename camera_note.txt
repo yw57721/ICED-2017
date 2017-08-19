@@ -1,0 +1,66 @@
+The data for each camera is coded in the following format:
+<camera ID> + <price> + <resolution> + <weight> + <screen size> + <screen ratio> + <touch screen or not> + <rotate screen or not> + <body color> + <camera type> + <Optical zoom multiple> + <materials of the body> + <sensor type> + <sensor size> + <image processor> + <lens type> + <zoom way> + <focal length> + <micro lens> + <focus> + <filter diameter> + <white balance mode> + <shutter> + <stabilizer> + <burst shooting supported or not> + <self timer supported or not> + <additional function or not> + <portability> + <easy to operate> + <general effect of photos> + <appearance> + <general functions> + <focus speed> + <suitable for user> + <image quality>
+
+-------------------------------------------------
+Note: Explanation of the coding:
+Element 1 is the camara's ID, ranging from 1-200.
+
+Price: code = 110 (if Price<999); code = 111 (if 1000<Price<1499); code = 112 (if 1500<Price<1999); code = 113 (if 2000<Price<2499); code = 114 (if Price>250);
+
+Resolution: code = 115 (if Resolution <10M); code = 116 (if 10M<Resolution <16M); code = 117 (if Resolution > 16M)
+
+Weight: code = 118 (if Weight < 199g); code = 119 (if 200< Weight < 299g); code = 120 (if 300< Weight < 399g); code = 121 (if 400< Weight < 499g); code = 122 (if Weight > 500g)
+
+screen size: code = 123 (if screen size <= 2.5 inches); code = 124 (if screen size = 2.7 inches); code = 125 (if screen size = 2.8 inches); code = 126 (if screen size =3.0 inches); code = 127 (if screen size > 3.0 inches); code = 128 (if screen size is others)
+
+screen ratio: code = 129 (if screen ratio = 3:2); code = 130 (if screen ratio = 4:3); code = 131 (if screen ratio = others)
+
+touch screen or not: code = 132 (if touch screen = yes); code = 133(if touch screen = no)
+
+rotate screen or not: code = 134 (if rotate screen = yes); code = 135 (if rotate screen = no)
+
+body color: code = 136 (if body color = black); code = 137 (if body color = white); code = 138 (if body color = silver); code = 139 (if body color = purple); code = 140 (if body color = yellow); code = 141 (if body color = others);
+
+camera type: code = 142 (if camera type = pocket camera); code = 143 (if camera type = Interchangeable Lens Digital Camera); code = 144 (if camera type = DC); code = 145 (if camera type = DSLR); 
+code = 146 (if camera type = others);
+
+Optical zoom multiple: code = 147 (if multiple < 3); code = 148 (if 3<= multiple < 4.9); code = 149 (if multiple > 5);
+
+materials of the body: code = 150 (if materials=metal ); code = 151 (if materials=plastics); code = 152 (if materials= combination of metal and plastics); code = 153 (if materials=others);
+
+sensor type: code = 154 (if type = CMOS ); code = 155 (if type = CCD); code = 156 (if type = others); 
+
+sensor size: code = 157 (if size = 1 inch ); code = 158 (if size = 1/2.3 inches); code = 159 (if size = APS-C); code = 160 (if size = 1/1.7 inches); code = 161 (if size = others);
+
+
+image processor: code = 162 (if processor = BIONZ); code = 163 (if processor = DIGIC); code = 164 (if processor = EXR); code = 165 (if processor = others);
+
+lens type: code = 166 (if type = retractable); code = 167 (if type = periscope); code = 168 (if type = prime lens); code = 169 (if type = others);
+
+zoom type: code = 170 (if type = optical zoom); code = 171 (if type = digital zoom); code = 172 (if type = optical and digital zoom); code = 173 (if type = others);
+
+focal length: code = 174 (if length < 20mm); code = 175 (if 20mm=<length<299mm); code = 176 (if 300mm=<length<499mm); code = 177 (if length >500);
+
+micro lens: code = 178 (if length < 100cm); code = 179 (if 100cm=<length<499cm); code = 180 (if length>=500mm);
+
+focus: code = 180 (if focus = automatic); code = 182 (if focus =AF/DMR/manual); code = 183 (if focus = AF/MR); code = 184 (if focus = others);
+
+filter diameter: code = 185 (if diameter < 50mm); code = 186 (if 50mm=< diameter <99mm); code = 187 (if diameter >=100mm); code = 188 (if diameter is null);
+
+white balance mode: code = 189 (if mode = automatic); code = 190 (if mode=semi-auto);
+
+shutter: code = 191 (if shutter = 15-1/3200 sec); code = 192 (if shutter =250-1/2000 sec);code = 193 (if shutter = multiple mode); code = 194 (if shutter =others);
+
+stabilizer: code = 195 (if stabilizer = optical); code = 196 (if stabilizer = electronic);code = 197 (if stabilizer = others); 
+
+burst shooting supported or not: code = 198 (if supported); code = 199 (if not supported);
+
+self timer supported or not: code = 200 (if supported); code = 201 (if not supported);
+
+additional function or not: code = 202 (if yes); code = 203 (if no);
+
+For portability, easy to operate, general effect of photos, appearance, 
+general functions, focus speed, suitable for user, and image quality, these are product properties mentioned by the product review. They are used as customer needs in ICED2017 paper (NOTE: they are not the actual customer needs data). The number indicates the relative frequency appearance in product review text. The values are calculated as: 100*#(reviews mentioning the corresponding property)/#(total reviews of the corresponding camera) 
+
+
+N means the corresponding value is missing.

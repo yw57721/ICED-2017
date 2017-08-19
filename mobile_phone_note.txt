@@ -1,0 +1,59 @@
+The data for each mobile phone is coded in the following format:
+
+<mobile phone ID> + <screen size>+ < screen resolution >+ < processor >+ < RAM > + < storage space > + < front-facing camera > + < back camera > + < capacity of battery > + < price > + < launch time > + < mode of network > + <type of network> + <CPU> + < with or without fingerprint recognition > + < steel frame or not > + < black colour or not> + < white colour or not > + < grey colour or not > + < golden colour or not > + < rose golden colour or not > + < silver colour or not > + <other color> + < good appearance > + <smooth when using> + <good response for touch screen>+ < high cost-performance >   + < comprehensive functions > + < powerful functions > + < high resolution > + <stable signal> + <good sound system> + <good communication capability> + < long stand-by time > + <big screen>
+
+
+-----------------------------
+Explanation of coding rule
+-----------------------------------
+<mobile phone ID> : from 1 to 199
+
+<screen size>: the value is the true screen size
+
+< screen resolution >: code = 1 if resolution=960*540; code = 2 if resolution=1280*720; code = 3 if resolution=1920*1080; code = 4 if resolution=2560*1440; code = 5 if resolution=1136*640; code = 6 if resolution=1334*750; code = 7 if resolution=480*854; code = 8 if resolution=320*240; code = 9 if resolution=128*160;
+
+< processor >: The number indicates the number of core in the process.
+
+< RAM >: the number indicates the space of RAM, in GB.
+
+< storage space >: the number indicates the space of storage, in GB.
+
+<front-facing camera >: the resolution of the camera.
+
+< back cameras >: the number indicates the resolution of the camera.
+
+< capacity of battery >: the number indicates the capacity in terms of mAh.
+
+< price >: in RMB
+ < launch time >: the launching year
+
+< mode of network >: code = 1 if single Sim Card; code = 2 if two Sim Cards are enabled;
+
+<type of network>: code = 1 if all the network are supported; code = 2 if China Mobile 4G  and China Unicom4G  are enabled;code = 3 if only China Mobile4G  supported; code = 4 if China Unicom 4G are enabled;code = 5 if China Communication 4G isenabled;code = 6 if only China Mobile2G  supported;
+
+<CPU>:code = 1 if CPU is from Qualcam; code = 2 if CPU is from Samsung; code= 3 if apple CPU is used; code = 4 if MediaTek CPU is used;code = 5 if Hisilicon chip is used;code = 6 if Moorefield chip is used;code = 7 if Marvell chip is used;code = 8 if there is no relevant information;
+
+< with or without fingerprint recognition >: code = 1 if Yes; code = 2 if no;
+
+< steel frame or not >: code = 1 if Yes; code = 2 if no;
+ 
+
+< black colour or not>: code = 1 if Yes; code = 2 if no;
+
+< white colour or not >: code = 1 if Yes; code = 2 if no;
+
+< grey colour or not >: code = 1 if Yes; code = 2 if no;
+
+< golden colour or not >: code = 1 if Yes; code = 2 if no;
+
+< rose golden colour or not >: code = 1 if Yes; code = 2 if no;
+
+< silver colour or not>: code = 1 if Yes; code = 2 if no;
+
+<other color>: code = 1 if Yes; code = 2 if no;
+
+
+For the remaining element in the form of real numnber, they represent customer needs. The number indicates the relative frequency appearance in product review text. The values are calculated as: 100*#(reviews mentioning the corresponding property)/#(total reviews of the corresponding camera) 
+
+
+N means the corresponding value is missing.
